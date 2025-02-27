@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="दुनिया भर की करेंसी को Real-Time में Convert करें। 160+ देशों की मुद्राओं के लिए सटीक एक्सचेंज रेट्स।">
+    <title>ProCurrency - Smart Currency Converter</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Google Ads Script -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-white shadow-lg">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
+                    <span class="text-white font-bold text-xl">₹$€</span>
+                </div>
+                <h1 class="ml-3 text-2xl font-bold bg-gradient-to-r from-blue-600 to-green-500 bg-clip-text text-transparent">
+                    ProCurrency
+                </h1>
+            </div>
+            
+            <!-- Hamburger Menu -->
+            <button id="menuBtn" class="lg:hidden">
+                ☰
+            </button>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden lg:flex space-x-8">
+                <a href="#home" class="hover:text-blue-600">Home</a>
+                <a href="#tools" class="hover:text-blue-600">Tools</a>
+                <a href="#privacy" class="hover:text-blue-600">Privacy</a>
+                <a href="#contact" class="hover:text-blue-600">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-b">
+        <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
+            <a href="#home">Home</a>
+            <a href="#tools">Tools</a>
+            <a href="#privacy">Privacy</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- Converter Section -->
+    <main class="container mx-auto px-6 py-12">
+        <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-md p-8">
+            <h2 class="text-3xl font-bold text-center mb-8">Currency Converter</h2>
+            
+            <!-- Ads Placement -->
+            <div class="mb-8">
+                <!-- Google Ads Code Here -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="auto"></ins>
+            </div>
+
+            <!-- Converter Form -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <input type="number" id="amount" placeholder="Amount" class="p-3 border rounded-lg">
+                
+                <select id="fromCurrency" class="p-3 border rounded-lg">
+                    <option value="USD">US Dollar (USD)</option>
+                    <option value="INR">Indian Rupee (INR)</option>
+                    <option value="EUR">Euro (EUR)</option>
+                </select>
+
+                <select id="toCurrency" class="p-3 border rounded-lg">
+                    <option value="INR">Indian Rupee (INR)</option>
+                    <option value="USD">US Dollar (USD)</option>
+                    <option value="EUR">Euro (EUR)</option>
+                </select>
+            </div>
+
+            <!-- Result -->
+            <div id="result" class="mt-8 text-center text-2xl font-bold text-green-600"></div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-12 py-12">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4">About</h3>
+                <p>यह एक Currency Converter Website है जो किसी भी देश की करेंसी को किसी भी देश की करेंसी में बदलने की सुविधा देती है।</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Privacy</h3>
+                <p>हम User Data न तो Collect करते हैं, न ही Store करते हैं, और न ही Share करते हैं।</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Services</h3>
+                <p>हम Currency से संबंधित सभी प्रकार की Conversion & Exchange Services प्रदान करते हैं।</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Contact</h3>
+                <p>Email: contact@procurrency.com<br>Phone: +91 98765 43210</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
